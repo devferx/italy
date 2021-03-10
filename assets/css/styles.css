@@ -1,0 +1,43 @@
+html {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 57px;
+  box-sizing: border-box;
+  padding-inline: 50px;
+  background-color: black;
+}
+
+.navbar__logo {
+  width: 50px;
+}
+
+.navbar__menu {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar__menu li {
+  margin-inline-start: 27px;
+}
+
+.navbar__menu li:first-child {
+  margin-inline-start: 0px;
+}
+
+.navbar__menu a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__menu__item-bold {
+  font-weight: 600;
+}
