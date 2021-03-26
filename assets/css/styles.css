@@ -94,6 +94,48 @@ body {
   margin-top: 24px;
 }
 
+.new-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  justify-content: center;
+  width: 100%;
+  margin-block: 77px;
+}
+
+.new-section img {
+  width: 100%;
+}
+
+.new-section__body {
+  text-align: center;
+}
+
+.new-section__body__title {
+  margin-block-end: 24px;
+}
+
+.new-section__body__title h3 {
+  margin-block-end: 16px;
+  font-weight: 400;
+}
+
+.new-section__body__title p {
+  opacity: 50%;
+}
+
+.new-section__body__desc {
+  margin-block-end: 24px;
+}
+
+.new-section__body__tag {
+  opacity: 50%;
+  font-size: 10px;
+}
+
+.new-section__body__btn {
+  margin-block: 24px !important;
+}
+
 .btn {
   display: block;
   width: max-content;
@@ -102,5 +144,53 @@ body {
   color: white;
   font-size: 12px;
   text-decoration: none;
+  border: none;
   background-color: black;
+  cursor: pointer;
+}
+
+.btn.--expanded {
+  width: 100%;
+}
+
+.btn.--border {
+  display: inline-block;
+  margin-block-start: 4px;
+  color: black;
+  border: 1px solid #1c1b1b;
+  background: transparent;
+}
+
+.btn.--border:disabled {
+  opacity: 0.5;
+  cursor: initial;
+}
+
+.btn.--border:first-child {
+  margin-inline-end: 16px;
+}
+
+.link {
+  color: black;
+}
+
+.color-select {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-block-start: 4px;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-select.silver {
+  margin-inline-end: 16px;
+  background-image: linear-gradient(231.91deg, #9e9e9e 27.13%, #e4e4e4 80.75%);
+  background-color: #c4c4c4;
+}
+.color-select.golden {
+  background-image: linear-gradient(312.66deg, #efd48a 43.37%, #bf9740 70.06%);
+  background-color: #d6b05e;
 }
