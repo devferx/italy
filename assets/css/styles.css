@@ -99,7 +99,9 @@ body {
   grid-template-columns: repeat(auto-fit, 400px);
   justify-content: center;
   width: 100%;
-  margin-block: 77px;
+  margin-block: 64px;
+  border-block: 1px solid #e7e7e7;
+  padding-block: 77px;
 }
 
 .new-section img {
@@ -193,4 +195,46 @@ body {
 .color-select.golden {
   background-image: linear-gradient(312.66deg, #efd48a 43.37%, #bf9740 70.06%);
   background-color: #d6b05e;
+}
+
+.shop-accessories {
+  margin-block: 40px;
+}
+
+.shop-accessories__title {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.shop-accessories__card-grid {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin-block: 64px;
+}
+
+.card-accessory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-accessory img {
+  width: 100%;
+}
+
+.card-accessory__body {
+  margin-block: 16px;
+  text-align: center;
+}
+
+.card-accessory__body__title {
+  margin-block-end: 8px;
+  font-size: 13px;
+}
+
+.card-accessory__body__price {
+  font-size: 13px;
+  opacity: 0.5;
 }
