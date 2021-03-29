@@ -287,3 +287,71 @@ body {
 .post img {
   width: 100%;
 }
+
+.footer {
+  padding-block: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+.footer-title {
+  margin-block-end: 24px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1c1b1b;
+}
+
+.footer-text {
+  margin-block-end: 24px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1c1b1b;
+  opacity: 0.5;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 160px;
+}
+
+.social-media {
+  opacity: 0.5;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list a {
+  font-size: 13px;
+  line-height: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1c1b1b;
+  opacity: 0.5;
+}
+
+.footer__newsletter__input {
+  width: 100%;
+  max-height: 40px;
+  padding: 24px 12px;
+}
+
+.footer__newsletter .btn {
+  margin: 0;
+  margin-block-start: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-grid {
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
