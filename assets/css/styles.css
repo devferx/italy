@@ -350,6 +350,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+  .navbar__menu {
+    display: none;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 40px;
