@@ -146,6 +146,7 @@ body {
   color: white;
   font-size: 12px;
   text-decoration: none;
+  text-transform: uppercase;
   border: none;
   background-color: black;
   cursor: pointer;
@@ -248,4 +249,41 @@ body {
 .video-section img {
   width: 100%;
   max-width: 720px;
+}
+
+.blog-section {
+  padding-block-end: 64px;
+  margin-block-end: 64px;
+}
+
+.blog-section h3 {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.blog-section__posts-container {
+  padding-block: 64px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-items: center;
+  gap: 32px;
+}
+
+.post {
+  position: relative;
+  width: 370px;
+}
+
+.post__title {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.post img {
+  width: 100%;
 }
