@@ -238,3 +238,14 @@ body {
   font-size: 13px;
   opacity: 0.5;
 }
+
+.video-section {
+  display: grid;
+  place-items: center;
+  margin-block: 120px;
+}
+
+.video-section img {
+  width: 100%;
+  max-width: 720px;
+}
